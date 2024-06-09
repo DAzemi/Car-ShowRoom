@@ -1,65 +1,227 @@
-body {
+/* General styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Oswald;
-  background-color: slategray;
 }
 
 canvas {
-
-  height: 500px !important;
-}
-
-.BoxContainer {
-  text-align: center;
-  padding: 20px;
-  background-color: #cdcdcd;
-}
-
-h1 {
-  color: #333;
-}
-
-p {
-  color: #666;
-}
-
-input[type="color"] {
-  margin-top: 20px;
+  height: 450px !important;
 }
 
 .navbar {
   background-color: #333;
-  color: #f4f2f2;
-  padding: 10px 0;
+  color: #fff;
+  padding: 1rem;
 }
 
 .navbar .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Full height of viewport */
+}
+
+.BoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.BoxContainer h1,
+.BoxContainer p {
+  margin: 0.5rem 0;
+  font-size: x-large;
+}
+
+.BoxContainer input {
+  margin: 20px 0;
+}
+
+.audio-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #302e2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.audio-button:hover {
+  background-color: #737678;
+}
+
+.color-input {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 50%;
+}
+
+.color-picker {
+  display: flex;
+  gap: 20px;
+  /* Space between color inputs */
+}
+
+.color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.summary-container:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.summary-left {
+  flex: 1;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.summary-left h1 {
+  padding: 5px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.summary-left p {
+  padding: 10px;
+}
+
+.summary-right h1 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+
+.summary-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.summary-item {
+  border-radius: 5px;
+  flex: 1;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.technology-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.technology-header {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: x-large;
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.category,
+.option,
+.option-code,
+.price {
+  flex: 1;
+  text-align: center;
+}
+
+.line {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.top-models-container {
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.top-models-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.top-models-images img {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
 
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 1rem;
   text-align: center;
 }
 
 .footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-select {
-  margin-top: 20px;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
