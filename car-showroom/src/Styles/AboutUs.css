@@ -1,0 +1,316 @@
+.about-us {
+  font-family: Oswald;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fafafa;
+}
+
+.hero-section {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-section h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 2.2em;
+}
+
+.scroll-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: #0056b3;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.element {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.element-visible {
+  opacity: 1;
+}
+
+.mission-section,
+.team-section,
+.showroom-section,
+.map-section,
+.history-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.team-section {
+  text-align: center;
+
+}
+
+.team-section h2 {
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.mission-section .content,
+.showroom-section .content {
+  max-width: 500px;
+  margin-right: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.mission-section img,
+.showroom-section img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.map-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  width: 80%;
+  max-width: 600px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+
+  .mission-section,
+  .showroom-section,
+  .map-section {
+    flex-direction: column;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .mission-section .content,
+  .showroom-section .content {
+    margin-right: 0;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: orange;
+  }
+
+  50% {
+    color: yellow;
+  }
+
+  75% {
+    color: green;
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+.color-changing-text {
+  animation: colorChange 5s infinite;
+}
+
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bouncing-image {
+  animation: bounce 2s infinite;
+  box-shadow: none !important;
+
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.zoom-hover {
+  transition: transform 0.5s ease-in-out;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.2);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.swing-animation {
+  animation: swing 2s ease-in-out infinite;
+}

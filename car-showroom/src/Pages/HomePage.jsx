@@ -15,12 +15,12 @@ import vid2 from "../videos/Video2.mp4";
 import vid3 from "../videos/Video3.mp4";
 import vid4 from "../videos/Video4.mp4";
 import {
-    FiGithub,
-    FiTwitter,
-    FiLinkedin,
-    FiGlobe,
-    FiYoutube,
-  } from "react-icons/fi";
+  FiGithub,
+  FiTwitter,
+  FiLinkedin,
+  FiGlobe,
+  FiYoutube,
+} from "react-icons/fi";
 
 const HomePage = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -113,7 +113,7 @@ const HomePage = () => {
     <div>
       <header className="bg-gray-800 text-white py-4 text-center">
         <nav className="flex">
-        <p className="text-white ml-[6%]">Car-Showroom</p>
+          <p className="text-white ml-[6%]">Car-Showroom</p>
           <ul className="flex justify-center space-x-4 ml-[74%]">
             <li>
               <a href="/" className="text-white hover:text-gray-400">
@@ -128,7 +128,7 @@ const HomePage = () => {
             <li>
             </li>
             <li>
-              <a href="/about-us" className="text-white hover:text-gray-400">
+              <a href="/aboutUs" className="text-white hover:text-gray-400">
                 About Us
               </a>
             </li>
@@ -237,28 +237,28 @@ const HomePage = () => {
         </section>
       </main>
       <footer className="w-[100%]">
-      <div className="container w-full">
-      <div className="pt-10 sm:pt-30 pb-1 mt-20 border-t-2 border-primary-light dark:border-secondary-dark w-full">
-        {/* Footer social links */}
-        <div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-          <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-            Follow me
-          </p>
-          <ul className="flex gap-4 sm:gap-8">
-            {socialLinks.map((link) => (
-              <a
-                href={link.url}
-                target="__blank"
-                key={link.id}
-                className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-300"
-              >
-                <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
-              </a>
-            ))}
-          </ul>
+        <div className="container w-full">
+          <div className="pt-10 sm:pt-30 pb-1 mt-20 border-t-2 border-primary-light dark:border-secondary-dark w-full">
+            {/* Footer social links */}
+            <div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
+              <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
+                Follow me
+              </p>
+              <ul className="flex gap-4 sm:gap-8">
+                {socialLinks.map((link) => (
+                  <a
+                    href={link.url}
+                    target="__blank"
+                    key={link.id}
+                    className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-300"
+                  >
+                    <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
+                  </a>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </footer>
     </div>
   );
