@@ -163,7 +163,7 @@ const HomePage = () => {
                 ref={videoRef}
                 autoPlay
                 muted
-                className="w-full max-w-full"
+                className="w-full max-w-full" style={{ boxShadow: '0 20px 8px rgba(0, 0, 0, 0.1)' }}
               >
                 <source src={videos[currentVideoIndex]} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -173,8 +173,9 @@ const HomePage = () => {
               <h2 className="py-12 pl-12 mt-12">
                 OUR ELECTRIC AND HYBRID RANGE
               </h2>
-              <hr className="border-t-4 border-gray-800 ml-6 mb-12 w-[50%]"></hr>
-              <h3 className="ml-12">
+              <hr className="border-t-4 border-gray-800 ml-6 mb-12 w-[50%]" />
+
+              <h3 className="ml-12 " style={{ boxShadow: '0 20px 8px rgba(0, 0, 0, 0.1)' }}>
                 Our Electric and Hybrid range represents everything that Mazda
                 has built into its DNA over the past 100 years: beautiful
                 design, Japanese craftmanship and innovative technologies,
@@ -192,7 +193,7 @@ const HomePage = () => {
                 OUR ELECTRIC AND HYBRID RANGE
               </h2>
               <hr className="border-t-4 border-gray-800 ml-[46%] mb-12 w-[50%]"></hr>
-              <h3 className="mr-8 pl-16">
+              <h3 className="mr-8 pl-16" style={{ boxShadow: '0 20px 8px rgba(0, 0, 0, 0.1)' }}>
                 Our Electric and Hybrid range represents everything that Mazda
                 has built into its DNA over the past 100 years: beautiful
                 design, Japanese craftmanship and innovative technologies,
@@ -206,7 +207,7 @@ const HomePage = () => {
                 ref={videoRef2}
                 autoPlay
                 muted
-                className="w-full max-w-full"
+                className="w-full max-w-full" style={{ boxShadow: '0 20px 8px rgba(0, 0, 0, 0.1)' }}
               >
                 <source src={videos2[currentVideo2Index]} type="video/mp4" />
                 Your browser does not support the video tag.

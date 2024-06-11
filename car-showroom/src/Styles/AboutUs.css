@@ -153,6 +153,10 @@
   max-width: 600px;
 }
 
+.modal p {
+  font-size: 20px;
+}
+
 .overlay {
   position: fixed;
   top: 0;

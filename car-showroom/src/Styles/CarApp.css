@@ -207,8 +207,9 @@ canvas {
 .top-models-images img {
   width: 500px;
   height: auto;
-  border-radius: 50%;
   object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -224,4 +225,12 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.zoom-hover {
+  transition: transform 0.5s ease-in-out;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.2);
 }
