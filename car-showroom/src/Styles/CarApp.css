@@ -8,8 +8,10 @@ html {
 }
 
 canvas {
-  height: 450px !important;
+  height: 450px;
 }
+
+
 
 .navbar {
   background-color: #333;

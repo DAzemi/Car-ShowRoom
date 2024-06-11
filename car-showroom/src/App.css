@@ -11,3 +11,8 @@
   color: #fff;
   border-radius: 20px;
 }
+
+
+#pixi-component canvas {
+  height: auto !important;
+}
