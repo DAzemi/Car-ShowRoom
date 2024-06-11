@@ -37,7 +37,7 @@ function CarApp() {
   return (
     <>
       <Navbar />
-      <Canvas camera={{ position: [0, 5, 10], fov: 50 }}>
+      <Canvas  camera={{ position: [0, 5, 10], fov: 50  }}>
         <ambientLight intensity={2} />
         <OrbitControls enableZoom={false} />
         <Suspense fallback={null}>
