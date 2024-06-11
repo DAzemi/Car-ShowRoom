@@ -34,7 +34,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            to="/about-us"
+            to="/aboutUs"
             className="w-30 h-11 text-white rounded-xl justify-center items-center inline-flex duration-300 hover:bg-cyan-500"
           >
             <div className="w-30 self-stretch px-2.5 justify-center items-center flex">

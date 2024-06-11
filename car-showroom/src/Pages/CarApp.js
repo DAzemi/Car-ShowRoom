@@ -9,6 +9,7 @@ import Footer from "../Components/Footer";
 import { FaInfoCircle } from "react-icons/fa";
 import mazda1 from "../img/mazda1.jpg";
 import mazda3 from "../img/mazda3.avif";
+import mazdatop3 from "../img/mazdatop3.jpg";
 
 function CarApp() {
   const [color, setColor] = useState("#ff0000");
@@ -46,7 +47,7 @@ function CarApp() {
       </Canvas>
 
       <div className="main-container">
-        <div className="BoxContainer">
+        <div className="BoxContainer"  style={{ boxShadow: '0 20px 8px rgba(0, 0, 0, 0.1)' }}>
           <h1>Mazda RX-7</h1>
           <p>Pick your car & tire colors</p>
           <div className="color-picker">
@@ -68,7 +69,7 @@ function CarApp() {
           </button>
         </div>
       </div>
-
+    <audio ref = {audioRef} src={carSound}/>
       <div className="summary-container">
         <div className="summary-left">
           <h1>Your RX-7 Configuration</h1>
@@ -146,9 +147,9 @@ function CarApp() {
       <div className="top-models-container">
         <h1>Top 3 Models</h1>
         <div className="top-models-images">
-          <img src={mazda1} alt="Model 1" />
-          <img src={mazda3} alt="Model 1" />
-          <img src={mazda3} alt="Model 1" />
+          <img className="zoom-hover" src={mazda1} alt="Model 1" />
+          <img className="zoom-hover" src={mazda3} alt="Model 1" />
+          <img className="zoom-hover" src={mazdatop3} alt="Model 1" />
         </div>
       </div>
       <Footer />
