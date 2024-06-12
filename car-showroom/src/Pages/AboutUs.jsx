@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import Modal from 'react-modal';
-// import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Preloader from "../Components/Prealoder";
 import '../Styles/AboutUs.css';
 import Navbar from "../Components/Navbar";

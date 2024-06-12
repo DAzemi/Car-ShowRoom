@@ -21,7 +21,7 @@ const Footer = () => {
               <ul class="flex flex-row mt-6 space-x-4">
                 <li>
                   <a
-                    href="/about-us"
+                    href="/aboutUs"
                     title=""
                     class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
@@ -43,12 +43,12 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="/car"
+                    href="/pixiGame"
                     title=""
                     class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
-                    Works{" "}
+                    Game{" "}
                   </a>
                 </li>
               </ul>

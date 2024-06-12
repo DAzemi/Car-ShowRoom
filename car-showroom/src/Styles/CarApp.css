@@ -1,4 +1,3 @@
-/* General styles */
 body,
 html {
   margin: 0;
@@ -91,7 +90,6 @@ canvas {
 .color-picker {
   display: flex;
   gap: 20px;
-  /* Space between color inputs */
 }
 
 .color-input::-webkit-color-swatch {
