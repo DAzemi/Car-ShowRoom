@@ -149,17 +149,17 @@ function AboutUs() {
             <div className="team-members">
               <div className="team-member zoom-hover">
                 <img src={team1} alt="Team Member" />
-                <h3>John Doe</h3>
+                <h3>Argjend Azizi</h3>
                 <p>CEO</p>
               </div>
               <div className="team-member zoom-hover ">
                 <img src={teamImage2} alt="Team Member" />
-                <h3>Jane Smith</h3>
+                <h3>Ariana Gashi</h3>
                 <p>CTO</p>
               </div>
               <div className="team-member zoom-hover">
                 <img src={teamImage3} alt="Team Member" />
-                <h3>Emily Johnson</h3>
+                <h3>Ardonita Aliu</h3>
                 <p>COO</p>
               </div>
             </div>
