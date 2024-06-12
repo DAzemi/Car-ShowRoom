@@ -100,7 +100,7 @@ const Entry = () => {
         continueText.interactive = true;
         continueText.buttonMode = true;
         continueText.on("click", () => {
-          window.location.href = "https://www.example.com";
+          window.location.href = "/HomePage";
         });
 
         app.stage.addChild(continueText);
